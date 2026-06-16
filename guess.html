@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guess.css">
+    <script src="guess.js" defer></script>
+    <title>GUESS</title>
+</head>
+<body>
+    <div id="container">
+        <p>Guess a nymber between 1 - 100 !</p>
+        <input type="text" id="num">
+        <button id="btn" onclick="ggg()" >OK</button>
+        <button  onclick="round">REPLAY</button>
+        <div id="answer"></div>
+
+    </div>
+    <script>
+    let number = Math.floor(Math.random() * 100) + 1;
+
+function ggg(){
+    let myguess = Number(document.getElementById("num").value);
+
+    if(myguess == number){
+
+        document.getElementById("answer").textContent = " GG ! click on replay to play another round";
+
+    }else if(number<myguess){
+        document.getElementById("answer").textContent = " TOO HIGH ! TRY AGIAN";
+    }else if(number>myguess){
+        document.getElementById("answer").textContent = " TOO LOW ! TRY AGIAN";
+    }
+    
+}
+</script>
+</body>
+</html>

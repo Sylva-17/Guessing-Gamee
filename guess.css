@@ -1,0 +1,16 @@
+#container{
+    background-color: mediumpurple;
+    border-radius: 29px;
+    padding: 40px;
+    color: aliceblue;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#answer{
+    border-radius: 29px ;
+    padding: 20px;
+}
